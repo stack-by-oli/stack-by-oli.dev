@@ -1,0 +1,97 @@
+<!-- 
+  stack-by-oli.dev | Branding v1.0
+  File: stack-by-oli_logo_animated.svg
+  Created: 2025-10-06
+  Author: Oliver Groh
+  Motto: "Building the future, one line of code at a time."
+  Style: Futuristic Minimalism | Cyan–Violet–Amber | Darktheme
+  Type: Animated SVG (Glow + Gentle Gear Rotation)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="220" viewBox="0 0 980 220" role="img" aria-labelledby="title desc">
+  <title id="title">stack-by-oli.dev – animated branding</title>
+  <desc id="desc">Futuristischer Monospace-Schriftzug mit Zahnrad, Glühbirne und sanften Neonanimationen.</desc>
+  
+  <defs>
+    <!-- Gradient für Text -->
+    <linearGradient id="gradText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#00d1ff"/>
+      <stop offset="50%" stop-color="#7b2cff"/>
+      <stop offset="100%" stop-color="#ffb300"/>
+    </linearGradient>
+
+    <!-- Glow-Effekt -->
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur1"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Amber glow for slogan -->
+    <filter id="amberGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="g"/>
+      <feMerge>
+        <feMergeNode in="g"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes spinGear {
+      from { transform: rotate(0deg);}
+      to { transform: rotate(360deg);}
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; filter: url(#amberGlow); }
+      50% { opacity: 0.8; }
+    }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      letter-spacing: 0.5px;
+    }
+    .brand { fill: url(#gradText); filter: url(#softGlow); }
+    .slogan { fill: #ffd56b; opacity: 0.95; }
+    .icon-stroke { stroke: #37d5ff; }
+    .icon-glow { filter: url(#softGlow); }
+    .gear-anim { transform-origin: 70px 110px; animation: spinGear 12s linear infinite; }
+    .slogan-anim { animation: pulse 3.6s ease-in-out infinite; }
+  </style>
+
+  <!-- ICON: Zahnrad + Glühbirne -->
+  <g class="icon-glow">
+    <!-- Zahnrad -->
+    <g class="gear-anim">
+      <circle cx="70" cy="110" r="40" fill="none" stroke="#37d5ff" stroke-width="5"/>
+      <rect x="68" y="56"  width="4" height="14" fill="#37d5ff" rx="1"/>
+      <rect x="68" y="150" width="4" height="14" fill="#37d5ff" rx="1"/>
+      <rect x="26" y="108" width="14" height="4" fill="#37d5ff" rx="1"/>
+      <rect x="100" y="108" width="14" height="4" fill="#37d5ff" rx="1"/>
+      <rect x="42" y="73"  width="4" height="12" fill="#37d5ff" rx="1" transform="rotate(-45 44 79)"/>
+      <rect x="94" y="125" width="4" height="12" fill="#37d5ff" rx="1" transform="rotate(-45 96 131)"/>
+      <rect x="42" y="125" width="4" height="12" fill="#37d5ff" rx="1" transform="rotate(45 44 131)"/>
+      <rect x="94" y="73"  width="4" height="12" fill="#37d5ff" rx="1" transform="rotate(45 96 79)"/>
+      <circle cx="70" cy="110" r="10" fill="#0a0a0a" stroke="#37d5ff" stroke-width="4"/>
+    </g>
+
+    <!-- Glühbirne -->
+    <g>
+      <radialGradient id="bulbGrad" cx="0.5" cy="0.45" r="0.6">
+        <stop offset="0%" stop-color="rgba(255,245,180,1)"/>
+        <stop offset="60%" stop-color="rgba(255,220,120,0.45)"/>
+        <stop offset="100%" stop-color="rgba(255,220,120,0)"/>
+      </radialGradient>
+      <circle cx="130" cy="115" r="22" fill="url(#bulbGrad)"/>
+      <circle cx="130" cy="115" r="18" fill="none" stroke="#ffd56b" stroke-width="3"/>
+      <rect x="120" y="114" width="20" height="3" fill="#ffd56b" rx="1.5"/>
+      <rect x="123" y="132" width="14" height="8" rx="2" fill="#8e8e93"/>
+    </g>
+  </g>
+
+  <!-- TEXT -->
+  <g transform="translate(180, 90)">
+    <text class="mono brand" x="0" y="0" font-size="48">stack-by-oli.dev</text>
+    <text class="mono slogan slogan-anim" x="0" y="38" font-size="18">"Building the future, one line of code at a time."</text>
+  </g>
+</svg>

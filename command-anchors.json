@@ -1,0 +1,44 @@
+{
+  "anchors": [
+    {
+      "label": "🧱 Initialize Git",
+      "command": "git init",
+      "description": "Initializes the local Git repository"
+    },
+    {
+      "label": "📦 Add all files",
+      "command": "git add .",
+      "description": "Stages all project files for commit"
+    },
+    {
+      "label": "💾 First Commit",
+      "command": "git commit -m 'Initial commit – Under Construction v1.0'",
+      "description": "Creates the first local commit for your project"
+    },
+    {
+      "label": "🌿 Rename Branch → main",
+      "command": "git branch -M main",
+      "description": "Renames the default branch to 'main' (modern convention)"
+    },
+    {
+      "label": "🔗 Connect to GitHub",
+      "command": "git remote add origin git@github.com:stack-by-oli/stack-by-oli.dev.git",
+      "description": "Links your local repository to the GitHub remote repository"
+    },
+    {
+      "label": "🚀 Push to GitHub",
+      "command": "git push -u origin main",
+      "description": "Pushes the main branch to GitHub (initial upload)"
+    },
+    {
+      "label": "📥 Pull from GitHub",
+      "command": "git pull",
+      "description": "Fetches and merges changes from GitHub"
+    },
+    {
+      "label": "🧹 Status Check",
+      "command": "git status",
+      "description": "Shows the current repository status (modified, staged, etc.)"
+    }
+  ]
+}

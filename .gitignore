@@ -1,0 +1,28 @@
+# ──────────────────────────────────────────────
+# stack-by-oli.dev | .gitignore v1.0
+# Author: Oliver Groh
+# Created: 2025-10-06
+# Purpose: Prevent unnecessary or private files from being tracked
+# ──────────────────────────────────────────────
+
+# System / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs & Backups
+*.log
+*.tmp
+*.bak
+
+# Node / Future Tools
+node_modules/
+dist/
+.env
+
+# Personal & Docs
+docs/*.docx
+branding/*.png
+
+# OS Specific
+desktop.ini
