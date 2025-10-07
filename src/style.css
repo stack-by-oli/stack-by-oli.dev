@@ -1,85 +1,46 @@
 /*------------------------------------------------
-stack-by-oli.dev  |  Under Construction v1.0
+stack-by-oli.dev  |  Under Construction v1.2
 Developer: Oliver Groh
-Full Stack Developer (in Ausbildung)
-Theme: Darkmode - Neon Cyan/Violet/Amber
-Design: Minimal futuristic  |  Mobile-first
---------------------------------------------------
+Mobile-first - Neon Accents - Responsive Design
+--------------------------------------------------*/
 
-/* === COLOR VARIABLES === */
+/* ===  Root Variables  === */
 :root {
-  --bg: #0a0a0a;
-  --text: #eaeaea;
-  --accent-cyan: #00d1ff;
-  --accent-violet: #7b2cff;
-  --accent-amber: #ffb300;
+  --bg: #0f0f0f;
+  --text: #e5e5e5;
+  --accent-cyan: #00ffff;
+  --accent-violet: #a855f7;
+  --accent-amber: #ffb100;
 }
 
-/*  === GLOBAL RESET === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* === BASE PAGE SETUP === */
+/*  === Base Layout === */
 body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   background-color: var(--bg);
   color: var(--text);
-  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  font-family: "JetBrains Mono", monospace;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem 1rem;
+  overflow-x: hidden;
 }
 
-/* === MAIN CONTAINER === */
+/*  === Fade-in Animation === */
 .container {
-  animation: fadeIn 1.5s ease-in-out;
+  animation: fade-in 1.4s ease-in-out forwards;
+  opacity: 0;
 }
 
-/* === LOGO STYLING === */
-.logo {
-  width: 180px;
-  margin-bottom: 1rem;
-  filter: drop-shadow(0 0 10px var(--accent-cyan));
-  transition: transform 0.5s ease, filter 0.5s ease;
-}
-.logo:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 15px var(--accent-violet));
-}
-
-/* === HEADLINE === */
-.headline {
-  font-size: 1.6rem;
-  background-color: linear-gradient(
-    90deg,
-    var(--accent-cyan),
-    var(--accent-violet),
-    var(--accent-amber)
-  );
-
-  /* Chrome/Safari gradient text support */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
-}
-
-/* === SUBTEXT === */
-.subtext {
-  color: var(--accent-amber);
-  font-size: 1rem;
-  opacity: 0.9;
-}
-
-/* === ANIMATIONS === */
-@keyframes fadeIn {
+@keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -87,26 +48,124 @@ body {
   }
 }
 
-/* === RESPONSIVE ADJUSTMENTS === */
-@media (min-widht: 768px) {
-  .logo {
-    width: 220px;
+/*  === Helmet Icon === */
+.helmet {
+  font-size: 2.4rem;
+  margin-bottom: 0.3rem;
+  animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  .headline {
-    font-size: 2.2rem;
-  }
-  .subtext {
-    font-size: 1.1rem;
+  50% {
+    transform: translateY(-8px);
   }
 }
-/* === Optional: für große Desktop-Bildschirme */
-@media (min-widht: 1200px) {
-  .headline {
-    font-size: 2.6rem;
-    letter-spacing: 1px;
-    line-height: 1.3;
+
+/*  === Construction Sign === */
+.construction-sign {
+  font-size: 4rem;
+  margin-bottom: 0.6rem;
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    text-shadow: 0 0 5px var(--accent-amber);
   }
-  .subtext {
-    font-size: 1.4rem;
+  to {
+    text-shadow: 0 0 25px var(--accent-cyan);
+  }
+}
+
+/*  === Logo  === */
+.logo {
+  background: linear-gradient(
+    90deg,
+    var(--accent-cyan),
+    var(--accent-violet),
+    var(--accent-amber)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+  margin: 0.4rem 0;
+  text-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
+}
+
+/*  === Subtitle  === */
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin: 0.3rem 0 0.8rem 0;
+}
+
+/*  === Launch Info === */
+.launch-info {
+  color: var(--accent-amber);
+  font-size: 0.9rem;
+  margin: 1.2rem 0 1.8rem 0;
+}
+
+/*  === Contact Links === */
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  font-size: 1.8rem;
+}
+
+.contact a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact a:hover {
+  color: var(--accent-violet);
+  text-shadow: 0 0 10px var(--accent-violet);
+}
+
+/*  === Responsive Design === */
+
+/* Medium Devices (Tablets, Landscape) */
+@media (min-width: 600px) {
+  .logo {
+    font-size: 2.2rem;
+  }
+  .construction-sign {
+    font-size: 4.5rem;
+  }
+}
+
+/* Large Devices (Laptops, Desktops) */
+@media (min-width: 900px) {
+  body {
+    padding: 3rem;
+  }
+
+  .logo {
+    font-size: 2.6rem;
+    text-shadow: 0 0 18px rgba(168, 85, 247, 0.3);
+  }
+
+  .construction-sign {
+    font-size: 5.2rem;
+  }
+
+  .helmet {
+    font-size: 2.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .contact {
+    gap: 2rem;
+    font-size: 2rem;
   }
 }
