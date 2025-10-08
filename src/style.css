@@ -1,11 +1,12 @@
 /*------------------------------------------------
-stack-by-oli.dev  |  Under Construction v1.2
+stack-by-oli.dev  |  Under Construction v1.3
 Developer: Oliver Groh
-Mobile-first - Neon Accents - Responsive Design
+Branding - Logo & Icon Styling
 --------------------------------------------------*/
 
 /* ===  Root Variables  === */
 :root {
+  color-scheme: dark;
   --bg: #0f0f0f;
   --text: #e5e5e5;
   --accent-cyan: #00ffff;
@@ -116,6 +117,7 @@ body {
   justify-content: center;
   gap: 1.8rem;
   font-size: 1.8rem;
+  margin-top: 0.6rem;
 }
 
 .contact a {
@@ -163,9 +165,38 @@ body {
   .subtitle {
     font-size: 1.1rem;
   }
+}
 
-  .contact {
-    gap: 2rem;
-    font-size: 2rem;
-  }
+/*  === Branding v1.3 - Logo & Icon Styling === */
+/*  Visual glow, interactivity, responsive scaling  */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 0.4rem 0 0.2rem 0;
+}
+
+.logo-img {
+  width: clamp(220px, 60vw, 420px);
+  height: auto;
+  filter: drop-shadow(0 0 14px rgba(0, 255, 255, 0.3));
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.logo-img:hover {
+  transform: translateY(-2px) scale(1.01);
+  filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.5));
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
+  opacity: 0.95;
+}
+
+.icon:hover {
+  transform: translateY(-1px) scale(1.07);
+  filter: drop-shadow(0 0 14px rgba(168, 85, 247, 0.6));
+  opacity: 1;
 }
