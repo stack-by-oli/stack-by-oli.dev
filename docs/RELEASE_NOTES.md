@@ -1,3 +1,32 @@
+# 🚀 stack-by-oli.dev – Release Notes
+
+---
+
+## 🧩 Version 1.3 — Public Launch
+
+**Date:** 2025-10-08  
+**Status:** ✅ Online and verified
+
+### Summary
+
+- **Live Deployment:** The “Under Construction” page is now publicly accessible at [stack-by-oli.dev](https://stack-by-oli.dev)
+- **Branding Integration:** Added logo, favicon, and mail / GitHub icons
+- **Responsive Design:** Verified smooth scaling on mobile, tablet, and desktop
+- **Animations & Neon Accents:** Fade-in + pulse animations optimized for performance
+- **Email & GitHub Connectivity:** Fully functional and tested
+- **HTTPS Setup:** SSL certificate successfully configured through Strato
+
+### Developer Notes
+
+> “This marks the first public milestone of the **stack-by-oli.dev** ecosystem.  
+> It’s not just a placeholder — it’s a statement of intent:  
+> **Building the future, one line of code at a time.**”
+
+**Developer:** Oliver Groh  
+**Repository:** [github.com/stack-by-oli/stack-by-oli.dev](https://github.com/stack-by-oli/stack-by-oli.dev)
+
+---
+
 # 📦 stack-by-oli.dev – Release Notes
 
 ---
