@@ -2,10 +2,9 @@
 <html lang="en">
   <head>
     <!--  ====================================================
-          stack-by-oli.dev  |  Under Construction v1.1 
+          stack-by-oli.dev  |  Under Construction v1.3 
           Developer:  Oliver Groh
-          Purpose:    Temporary landing page while the main
-                      portfolio site is in development.
+          Purpose:    Visual Branding Integration
           ==================================================== -->
 
     <meta charset="UTF-8" />
@@ -14,11 +13,11 @@
     <!-- Page title -->
     <title>stack-by-oli.dev | Under Construction</title>
 
-    <!-- Link to external CSS -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Favicon (optional, to be added later in /branding) -->
+    <!-- ✅ Favicon Integration -->
     <link rel="icon" type="image/png" href="/branding/favicon.png" />
+
+    <!-- ✅ External CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -26,32 +25,49 @@
           MAIN CONTAINER
           ========================  -->
     <div class="container">
-      <!--  Helmet icon (symbolic for construction)  -->
+      <!--  👷 Helmet icon (symbolic for construction)  -->
       <div class="helmet">👷‍♂️</div>
 
-      <!--  Main construction sign (center element) -->
+      <!--  🚧 Construction Sign  -->
       <div class="construction-sign">🚧</div>
 
-      <!--  Website title (logo text) -->
-      <h1 class="logo">stack-by-oli.dev</h1>
+      <!--  🌐 Website Logo -->
+      <div class="logo-container">
+        <img
+          src="/branding/logo_dark.svg"
+          alt="stack-by-oli.dev logo"
+          class="logo-img"
+        />
+      </div>
 
-      <!--  Subtitle / Motto  -->
+      <!--  💬 Subtitle  -->
       <p class="subtitle">Building the future, one line of code at a time.</p>
 
-      <!--  Planned launch date -->
+      <!--  🕒 Planned Launch Info -->
       <p class="launch-info">
         Official launch planned for <strong>December 2025</strong>
       </p>
 
-      <!--  Contact links (Mail + GitHub) -->
+      <!--  ✉️ Contact links -->
       <div class="contact">
-        <a href="mailto:info@stack-by-oli.dev" title="Contact via email">📧</a>
+        <a href="mailto:info@stack-by-oli.dev" title="Contact via email">
+          <img
+            src="/branding/mail_icon.svg"
+            alt="Email Icon"
+            class="icon mail"
+          />
+        </a>
         <a
           href="https://github.com/stack-by-oli"
           target="_blank"
           title="Visit GitHub"
-          >🐙</a
         >
+          <img
+            src="/branding/github_icon.svg"
+            alt="GitHub Icon"
+            class="icon github"
+          />
+        </a>
       </div>
     </div>
 
