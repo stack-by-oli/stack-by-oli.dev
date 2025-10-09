@@ -1,12 +1,11 @@
 /*------------------------------------------------
-stack-by-oli.dev  |  Under Construction v1.3
+stack-by-oli.dev  |  Under Construction v1.4
 Developer: Oliver Groh
-Branding - Logo & Icon Styling
+Layout Refinement & Signature Line Integration
 --------------------------------------------------*/
 
-/* ===  Root Variables  === */
+/* === Root Variables === */
 :root {
-  color-scheme: dark;
   --bg: #0f0f0f;
   --text: #e5e5e5;
   --accent-cyan: #00ffff;
@@ -14,7 +13,7 @@ Branding - Logo & Icon Styling
   --accent-amber: #ffb100;
 }
 
-/*  === Base Layout === */
+/* === Base Layout === */
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -28,16 +27,16 @@ body {
   text-align: center;
   min-height: 100vh;
   margin: 0;
-  padding: 2rem 1rem;
+  padding: 3rem 1.5rem; /* ➕ mehr Raum */
   overflow-x: hidden;
+  letter-spacing: 0.02em;
 }
 
-/*  === Fade-in Animation === */
+/* === Fade-in Animation === */
 .container {
   animation: fade-in 1.4s ease-in-out forwards;
   opacity: 0;
 }
-
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -49,13 +48,12 @@ body {
   }
 }
 
-/*  === Helmet Icon === */
+/* === Helmet Icon === */
 .helmet {
   font-size: 2.4rem;
   margin-bottom: 0.3rem;
   animation: bounce 3s ease-in-out infinite;
 }
-
 @keyframes bounce {
   0%,
   100% {
@@ -66,13 +64,12 @@ body {
   }
 }
 
-/*  === Construction Sign === */
+/* === Construction Sign === */
 .construction-sign {
   font-size: 4rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
   animation: pulse 2s infinite alternate;
 }
-
 @keyframes pulse {
   from {
     text-shadow: 0 0 5px var(--accent-amber);
@@ -82,111 +79,60 @@ body {
   }
 }
 
-/*  === Logo  === */
-.logo {
-  background: linear-gradient(
-    90deg,
-    var(--accent-cyan),
-    var(--accent-violet),
-    var(--accent-amber)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.8rem;
-  margin: 0.4rem 0;
-  text-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
-}
-
-/*  === Subtitle  === */
-.subtitle {
-  font-size: 1rem;
-  opacity: 0.85;
-  margin: 0.3rem 0 0.8rem 0;
-}
-
-/*  === Launch Info === */
-.launch-info {
-  color: var(--accent-amber);
-  font-size: 0.9rem;
-  margin: 1.2rem 0 1.8rem 0;
-}
-
-/*  === Contact Links === */
-.contact {
-  display: flex;
-  justify-content: center;
-  gap: 1.8rem;
-  font-size: 1.8rem;
-  margin-top: 0.6rem;
-}
-
-.contact a {
-  color: var(--accent-cyan);
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.contact a:hover {
-  color: var(--accent-violet);
-  text-shadow: 0 0 10px var(--accent-violet);
-}
-
-/*  === Responsive Design === */
-
-/* Medium Devices (Tablets, Landscape) */
-@media (min-width: 600px) {
-  .logo {
-    font-size: 2.2rem;
-  }
-  .construction-sign {
-    font-size: 4.5rem;
-  }
-}
-
-/* Large Devices (Laptops, Desktops) */
-@media (min-width: 900px) {
-  body {
-    padding: 3rem;
-  }
-
-  .logo {
-    font-size: 2.6rem;
-    text-shadow: 0 0 18px rgba(168, 85, 247, 0.3);
-  }
-
-  .construction-sign {
-    font-size: 5.2rem;
-  }
-
-  .helmet {
-    font-size: 2.8rem;
-  }
-
-  .subtitle {
-    font-size: 1.1rem;
-  }
-}
-
-/*  === Branding v1.3 - Logo & Icon Styling === */
-/*  Visual glow, interactivity, responsive scaling  */
+/* === Logo === */
 .logo-container {
   display: flex;
   justify-content: center;
-  margin: 0.4rem 0 0.2rem 0;
+  margin: 0.6rem 0 0.4rem 0;
 }
-
 .logo-img {
-  width: clamp(220px, 60vw, 420px);
+  width: clamp(240px, 65vw, 460px);
   height: auto;
   filter: drop-shadow(0 0 14px rgba(0, 255, 255, 0.3));
   transition: transform 0.35s ease, filter 0.35s ease;
 }
-
 .logo-img:hover {
   transform: translateY(-2px) scale(1.01);
   filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.5));
 }
 
+/* === Subtitle & Signature Line === */
+.subtle-tagline {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  margin-top: -0.3rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.signature-line {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--accent-cyan);
+  opacity: 0.8;
+  letter-spacing: 0.04em;
+  font-style: italic;
+}
+.signature-line:hover {
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.6);
+  opacity: 1;
+}
+
+/* === Launch Info === */
+.launch-info {
+  color: var(--accent-amber);
+  font-size: 1rem;
+  margin: 1.8rem 0 2.4rem 0;
+}
+
+/* === Contact Links === */
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 2.2rem;
+  font-size: 1.9rem;
+  margin-top: 1rem;
+}
 .icon {
   width: 32px;
   height: 32px;
@@ -194,9 +140,38 @@ body {
   transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
   opacity: 0.95;
 }
-
 .icon:hover {
   transform: translateY(-1px) scale(1.07);
   filter: drop-shadow(0 0 14px rgba(168, 85, 247, 0.6));
   opacity: 1;
+}
+
+/* === Responsive Design === */
+@media (min-width: 600px) {
+  .logo-img {
+    width: clamp(260px, 55vw, 500px);
+  }
+  .construction-sign {
+    font-size: 4.5rem;
+  }
+  .subtle-tagline {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    padding: 3.5rem;
+  }
+  .helmet {
+    font-size: 2.8rem;
+  }
+  .construction-sign {
+    font-size: 5.2rem;
+  }
+  .subtle-tagline {
+    font-size: 1.1rem;
+  }
+  .signature-line {
+    font-size: 0.9rem;
+  }
 }
