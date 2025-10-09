@@ -46,3 +46,26 @@
 - Verified behavior across mobile and desktop browsers
 
 ---
+
+## 🧩 Version 1.3 — Branding Integration & Public Launch
+
+**Date:** 2025-10-09  
+**Status:** ✅ Live Deployment Successful
+
+### Summary
+
+- Integrated custom branding (logo, icons, favicon)
+- Implemented neon-accent hover and glow animations
+- Verified GitHub and mail links functionality
+- Uploaded project to live web server via SFTP
+- Domain stack-by-oli.dev successfully deployed with SSL
+
+### Notes
+
+This marks the official online launch of **stack-by-oli.dev**  
+and the beginning of the next development phase toward the full portfolio site.
+
+> “From local to live — every line of code is a milestone.”  
+> — Oliver Groh
+
+---
