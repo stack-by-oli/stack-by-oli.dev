@@ -69,3 +69,25 @@ and the beginning of the next development phase toward the full portfolio site.
 > — Oliver Groh
 
 ---
+
+## 🧩 Version 1.4 — Layout Refinement & Live Optimization
+
+**Date:** 2025-10-10  
+**Status:** 🚧 In Progress
+
+### Summary
+
+- Reviewed and optimized layout spacing for better readability
+- Planned typography scale and color contrast improvements
+- Preparing animated background texture (smoke/soft glow)
+- Testing gradient balance across dark-mode environments
+- Verified live build consistency (mobile + desktop)
+
+### Next Steps
+
+- Finalize visual balance adjustments
+- Add optional tagline variant for text section
+- Start configuration of professional VS Code environment
+- Prepare backup / sync routine for all workspace settings
+
+---
