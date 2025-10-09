@@ -17,3 +17,17 @@
 
 > “Building the future, one line of code at a time.”  
 > — Oliver Groh
+
+## 🧩 Version 1.1 — Code Structure Refinement
+
+**Date:** 2025-10-07  
+**Status:** ✅ Improved and validated locally
+
+### Summary
+
+- Cleaned up HTML structure
+- Validated CSS and fixed minor syntax issues
+- Updated favicon reference
+- Prepared for first responsive testing
+
+---
