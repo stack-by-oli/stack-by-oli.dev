@@ -31,3 +31,18 @@
 - Prepared for first responsive testing
 
 ---
+
+## 🧩 Version 1.2 — Responsive & Visual Update
+
+**Date:** 2025-10-08  
+**Status:** ✅ Mobile Optimization Complete
+
+### Summary
+
+- Introduced mobile-first responsive layout
+- Adjusted text scaling and spacing for readability
+- Added smooth fade-in and bounce animations
+- Enhanced glow effects and accent transitions
+- Verified behavior across mobile and desktop browsers
+
+---
