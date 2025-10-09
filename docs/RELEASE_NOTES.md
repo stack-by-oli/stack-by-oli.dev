@@ -72,7 +72,7 @@ and the beginning of the next development phase toward the full portfolio site.
 
 ## 🧩 Version 1.4 — Layout Refinement & Live Optimization
 
-**Date:** 2025-10-10  
+**Date:** 2025-10-09  
 **Status:** 🚧 In Progress
 
 ### Summary
@@ -91,3 +91,47 @@ and the beginning of the next development phase toward the full portfolio site.
 - Prepare backup / sync routine for all workspace settings
 
 ---
+
+# 🧱 stack-by-oli.dev — Under Construction Guide
+
+## Release Notes
+
+---
+
+### 🟩 Version 1.4 — _Layout Refinement + Signature Line Integration_
+
+📅 **Date:** 2025-10-09  
+👨‍💻 **Developer:** Oliver Groh
+
+#### ✨ Overview
+
+This release focuses on visual refinement and enhanced brand presentation.  
+The subtitle was redesigned into a dual-line structure to reinforce the brand’s message and introduce a unique signature tagline that captures the developer’s identity.
+
+#### 🧩 Changes
+
+- Replaced single tagline with **dual structure**:
+  - Primary line: “Building the future, one line of code at a time.”
+  - Signature line: “Crafted with patience, precision, and passion.”
+- Adjusted **layout spacing and typography** for better vertical balance.
+- Enhanced **logo hover animation** (drop shadow + smoother transitions).
+- Optimized **responsive scaling** across mobile and desktop.
+- Fine-tuned **accent colors** for improved visual contrast.
+- General cleanup and code alignment in both HTML and CSS.
+
+#### 🧱 Structure
+
+- `/src/index.html` → Updated to v1.4
+- `/src/style.css` → Layout refinement, signature line styling
+- `/branding/` → No changes
+
+#### 🌐 Deployment
+
+- Version successfully committed and deployed live via SFTP.
+- Under Construction Page now fully branded and responsive across devices.
+
+---
+
+**Next Milestone → Version 1.5**  
+🎯 Planned: VS Code Workspace Setup —  
+Professional development environment featuring _stack-by-oli.dev Darktheme Edition_ (Neon Cyan–Violet–Amber accents, JetBrains Mono, custom Prettier rules, and task integration).
